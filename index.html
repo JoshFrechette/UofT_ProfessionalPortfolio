@@ -2,57 +2,123 @@
 
 <html>  
   <head>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css" type="text/css">
-    <link rel="icon" href="TwistedPixels.png">           
-    <title>About Me</title>
+    <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
+    crossorigin="anonymous"
+    />
+    <link
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+    crossorigin="anonymous"
+    />
+    <link 
+    href="https://fonts.googleapis.com/css?family=Alata|Open+Sans&display=swap" 
+    rel="stylesheet"
+    />
+    <link 
+    rel="stylesheet" 
+    href="style.css" 
+    type="text/css"
+    />
+    <link 
+    rel="icon" 
+    href="TwistedPixels.png"
+    />  
+    <meta
+    name="viewport" 
+    content="width=device-width, initial-scale=1.0"
+    /> 
+    <meta 
+    http-equiv="X-UA-Compatible" 
+    content="ie=edge" 
+    />        
+    <title>JFD Portfolio</title>
   </head>
 
 <body class="d-flex flex-column h-100" style="background:transparent url('assets/funky-lines.png') no-repeat center center /cover">
   <main role="main" class="flex-shrink-0">
     <div class="container-fluid no-padding">
-      <div class="page-header">
-        <a class="navbar-brand" href="#"><h1>Joshua Fr&eacute;chette</h1></a>
-          <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">About Me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-          </ul> 
-      </div>
+        <div class="page-header" id="myHeader">
+            <img src="TwistedPixels.png" id="brand-logo">
+            <!-- <a class="navbar-brand" href="#"><h1>Joshua Fr&eacute;chette</h1></a> -->
+            <ul class="nav justify-content-end">
+            <li>
+                <a class="nav-link" href="#about-me">About Me</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#my-portfolio">Portfolio</a>
+            </li>
+            <li>
+                <a class="nav-link" href="#contact-me">Contact</a>
+            </li>
+            </ul> 
+        </div>
     </div>
         
-        <!--I tried using "style="min-height:100vh"" in the class container to keep the footer at the bottom
-        I only made the box extend down to the bottom of the page.-->
     <div class="container mx-auto" style="width: 70vw;">
-      <div class="row">
-        <div class="col-8  offset-2">
-          <h2>About Me</h2>
-          <hr>
-          <img src="assets/JF-LinkedIn.jpg" class="profile">
-
-          <p>
-          Hi! My name is Josh Fr&eacute;chette and I'm a student in the University of Toronto's School of Continuing Studies Coding Bootcamp. 
-          I am looking to become a full-stack web developer, though I haven't decided which field I wish to pursue yet. I am currently working part time as a 
-          freelance graphic designer and as a bartender/server.
-          </p>
- 
-          <p>
-          I am a high school graduate of a visual arts program at &Eacute;.S.P. De La Salle in Ottawa, ON and pursued part-time studies at 
-          the Ottawa School of Art and Carleton Unversity afterwards. In 2008, I began the Graphic Design program at OCADU and graduated in 2012, with honours.
-          </p>
- 
-          <p>
-          In my free time I like to read, walk around the city, and watch movies. I also enjoy biking, snowboarding, camping, hiking, and basketball.
-          </p>
-
+        <!-- Little greeting -->
+        <div class="row">
+            <div class = "col-8 offset-2">
+                <p id="hello">hello.</p>
+            </div>
         </div>
-      </div>
+        <!-- About Me Section -->
+        <div class="row">
+            <div class="col-8  offset-2">
+            <h2 id="about-me">About Me</h2>
+            <hr>
+            <img src="assets/JF-LinkedIn.jpg" class="profile">
+
+            <p>
+            Hi! My name is Josh Fr&eacute;chette and I'm a student in the University of Toronto's School of Continuing Studies Coding Bootcamp. 
+            I am looking to become a full-stack web developer, though I haven't decided which field I wish to pursue yet. I am currently working part time as a 
+            freelance graphic designer and as a bartender/server.
+            </p>
+    
+            <p>
+            I am a high school graduate of a visual arts program at &Eacute;.S.P. De La Salle in Ottawa, ON and pursued part-time studies at 
+            the Ottawa School of Art and Carleton Unversity afterwards. In 2008, I began the Graphic Design program at OCADU and graduated in 2012, with honours.
+            </p>
+    
+            <p>
+            In my free time I like to read, walk around the city, and watch movies. I also enjoy biking, snowboarding, camping, hiking, and basketball.
+            </p>
+
+            </div>
+        </div>
+        <hr>
+        <!-- Portfolio Section -->
+        <div class="row">
+            <div class="col-8 offset-2">
+                <h2 id="my-portfolio">My Work</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <img src="assets/JobRocket_Project1.png" class="portfolio">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <img src="assets/WeatherDashboard.png" class="portfolio">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-8 offset-2">
+                <img src="assets/WorkDayScheduler.png" class="portfolio">
+            </div>
+        </div>
+        <hr>
+        <!-- Contact Section -->
+        <div class="row" id="spacer">
+            <div class="col-8 offset-2">
+                
+                <h2 id="contact-me">Reach Out</h2>
+            </div>
+        </div>
     </div>
   </main>
   <div class="page-footer">
