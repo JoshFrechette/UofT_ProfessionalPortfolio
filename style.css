@@ -17,9 +17,10 @@ UPDATE: It did not work, but will leave link here as a refernce*/
     border: 5px solid #8c8c8c;
 }
 
-#brand-logo {
-    margin: 20px 20px 20px 20px;
+.my-work {
+    margin-bottom: 1rem;
 }
+
 
 
 /*necessary for the header to fit properly in the header. Strcitly using "nav-brand" didn't work*/
@@ -38,56 +39,28 @@ h2 {
     font-family: 'Alata', sans-serif;
     color: #8c8c8c;
 }
+h3 {
+    font-family: 'Alata', sans-serif;
+    color: #00388c;
+}
 
 /* Needed, otherwise nav will display below header and extend it */
 .navbar-brand .page-header{
+    /* position: fixed; */
     display: inline;   
 }
 
-.sticky {
-    position: fixed;
-    top:0;
-    width: 100%;
-}
-
-.sticky + .content {
-    padding-top: 102px;
-}
-
-.container {
-    /* margin: 20px 50px 50px 50px;
-    background:#ffffff; */
-
-}
-
- p, a, form, .nav-link  {
+ p, a, form, #nav-link  {
     color: #777777;
     font-family: 'Open Sans', sans-serif;
 }
 
 #hello {
+    margin-top: 15rem;
+    margin-bottom: 25rem;
     font-size: 200px;
     font-style: oblique;
 }
-/* Two different ways I waa trying to achieve the right effect, neither working */
-.caption {  
-    color: white;
-    background-color: #4aaaa5;
-    width: 200px;
-    height: 10%;
-    text-align: center;   
-    position: center relative inline;  /*this is keeping the text within the frame of the images*/
-}
-
-.carousel-caption {
-    width: 200px;
-    height: 50px;
-    color: #ffffff;
-    background-color:#4aaaa5;
-    position: absolute;
-}
-
-
 
 .row {
     padding: 20px 0px 20px 0px;
@@ -95,30 +68,57 @@ h2 {
 
 
 .no-padding {
-    padding: 0;
-    
+    padding: 0;   
 }
 
 .container .footer {
     margin-top: 20px;
-    
-
 }
+
+
+
+#brand-logo {
+
+    margin: 5px 20px 20px 20px;
+}
+
+.resume {
+    size: 20px;
+    color: #00388c;
+}
+
+#nav-link {
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+li {
+    list-style-type: none;
+}
+
+i {
+    color: #8c8c8c;
+}
+
+.reach-out {
+    font-size: 100px;
+    font-style: bold;
+}
+
 #spacer {
-    margin-bottom: 100px;
+    margin-bottom: 10px;
 }
 /*position and bottom fix to keep footer fixed at the bottom.*/
 .page-footer {
-    margin-top: 50rem;
-    position: fixed;
+    margin-top: 10rem;
+    /* position: fixed; */
     bottom: 0px;
+    height: 10rem;
     width:100%;
     color: #ffffff;
     background-color: #666666;
-    border-top: 5px solid#4aaaa5;
+    /* border-top: 5px solid#4aaaa5; */
 }
-
-
 
 .col-md-8 {
     padding: 20px 5px 5px 5px;
@@ -126,6 +126,10 @@ h2 {
 }
 
 .btn {
-    background-color:#4aaaa5;
+    width: 10rem;
+    margin: 0.5rem;
+    font-size: 60%;
+    color: #ffffff;
+    background-color:#00388c;
     border: 0;
 }

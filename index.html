@@ -41,20 +41,23 @@
 <body class="d-flex flex-column h-100" style="background:transparent url('assets/funky-lines.png') no-repeat center center /cover">
   <main role="main" class="flex-shrink-0">
     <div class="container-fluid no-padding">
-        <div class="page-header" id="myHeader">
-            <img src="TwistedPixels.png" id="brand-logo">
-            <!-- <a class="navbar-brand" href="#"><h1>Joshua Fr&eacute;chette</h1></a> -->
-            <ul class="nav justify-content-end">
-            <li>
-                <a class="nav-link" href="#about-me">About Me</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#my-portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a class="nav-link" href="#contact-me">Contact</a>
-            </li>
-            </ul> 
+        <div class="fixed-top page-header" id="myHeader">
+            <div class="row">
+                <div class="col">
+                <img src="TwistedPixels.png" id="brand-logo" href="#">
+                <!-- <a class="navbar-brand" href="#"><h1>Joshua Fr&eacute;chette</h1></a> -->
+                </div>
+                <div class="col" id="nav-link">
+                <!-- <ul class="nav justify-content-end"> -->
+                <ul>
+                    <li  class= "justify-content-end d-flex"><a href="#about-me">About Me</a></li>
+                    <li  class= "justify-content-end d-flex"><a href="#my-portfolio">Portfolio</a></li>
+                    <li  class= "justify-content-end d-flex"><a href="#contact-me">Contact</a></li>
+                    <li  class= "justify-content-end d-flex"><a href="https://github.com/TwistedPixels" target="_blank"><i class="fab fa-github"></i></a></li>
+                    <li  class= "justify-content-end d-flex"><a href="http://ca.linkedin.com/in/joshuafrechettedesign" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                </ul> 
+                </div>
+            </div>
         </div>
     </div>
         
@@ -71,52 +74,108 @@
             <h2 id="about-me">About Me</h2>
             <hr>
             <img src="assets/JF-LinkedIn.jpg" class="profile">
-
+            <h3>Josh Fr&eacute;chette</h3>
             <p>
-            Hi! My name is Josh Fr&eacute;chette and I'm a student in the University of Toronto's School of Continuing Studies Coding Bootcamp. 
-            I am looking to become a full-stack web developer, though I haven't decided which field I wish to pursue yet. I am currently working part time as a 
-            freelance graphic designer and as a bartender/server.
+            Web Developer with a certificate in Full Stack Web Development from the University of Toronto. Experience as a Graphic Designer 
+            and gained a bachelor's degree in Graphic Design at the Ontarion College of Art &amp; Design. Background in the hospitality industry, 
+            including supervising and management roles. Design software skills in Adobe Creative Suite and Coding skills in HTML, CSS, and Javascript.
             </p>
     
             <p>
-            I am a high school graduate of a visual arts program at &Eacute;.S.P. De La Salle in Ottawa, ON and pursued part-time studies at 
-            the Ottawa School of Art and Carleton Unversity afterwards. In 2008, I began the Graphic Design program at OCADU and graduated in 2012, with honours.
+            Strong abilities in teamwork, organization, and handling stress with composure. I enjoy applying new web capabilities to practical applications.
+            Passionate about successfully taking a project from concept to actualization.
             </p>
     
             <p>
-            In my free time I like to read, walk around the city, and watch movies. I also enjoy biking, snowboarding, camping, hiking, and basketball.
+            Using my combined expertise to create an immersive user experience, I'm excited to join a team of like-minded individuals who are striving to leave their mark on the web.
             </p>
+            <i class="far fa-file-pdf"></i> <a class="resume" href="Assets/JoshuaFrechette_Resume_2019.pdf" target="_blank">View Resume</a>
 
             </div>
         </div>
-        <hr>
         <!-- Portfolio Section -->
-        <div class="row">
+        <div class="row my-work">
             <div class="col-8 offset-2">
                 <h2 id="my-portfolio">My Work</h2>
+                <hr>
             </div>
         </div>
-        <div class="row">
+
+        <div class="row my-work">
+            <div class="col-8 offset-2">   
+
+                <div class="row">
+                    <h3>JobRocket</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/JobRocket_Project1.png" class="portfolio">
+                    </div>
+                    <div class="col">
+                        <hr>
+                        <hr>
+                        <p>JobRocket is Project 1 from UofT SCS Coding Bootcamp and is the first group project that we completed in class.</p>
+                        <button onclick="window.location.href = 'https://michaelhrivnak.github.io/JobRocket/';"class="btn"><span><i class="fab fa-github fa-fw"></i></span>GitHub Page</button>
+                        <button onclick="window.location.href = 'https://github.com/michaelhrivnak/JobRocket.git';"  class="btn"><i class="fab fa-github fa-fw"></i>GitHub Repository</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="row my-work">
             <div class="col-8 offset-2">
-                <img src="assets/JobRocket_Project1.png" class="portfolio">
+
+                <div class="row">
+                    <h3>Weather Dashboard</h3>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <img src="assets/WeatherDashboard.png" class="portfolio">
+                    </div>
+                    <div class="col">
+                        <hr>
+                        
+                        <p>An assignment from the UofT SCS Coding Bootcamp.</p>
+                        <button onclick="window.location.href = 'https://twistedpixels.github.io/WeatherDashboard/';"class="btn"><span><i class="fab fa-github fa-fw"></i></span>GitHub Page</button>
+                        <button onclick="window.location.href = 'https://github.com/TwistedPixels/WeatherDashboard.git';"  class="btn"><span><i class="fab fa-github fa-fw"></i></span>GitHub Repository</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
+
+        <div class="row my-work">
             <div class="col-8 offset-2">
-                <img src="assets/WeatherDashboard.png" class="portfolio">
+
+                    <div class="row">
+                        <h3>Work Day Planner</h3>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                         <img src="assets/WorkDayScheduler.png" class="portfolio">
+                    </div>
+                    <div class="col">
+                        <hr>
+                        <p>Renamed "DayPlanDreamer", this is an assignment from the UofT SCS Coding Bootcamp.</p>
+                        <button onclick="window.location.href = 'https://twistedpixels.github.io/DayPlanDreamer/';" class="btn"><span><i class="fab fa-github fa-fw"></i></span>GitHub Page</button>
+                        <button onclick="window.location.href = 'https://github.com/TwistedPixels/DayPlanDreamer.git';"  class="btn"><span><i class="fab fa-github fa-fw"></i></span>GitHub Repository</button>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-8 offset-2">
-                <img src="assets/WorkDayScheduler.png" class="portfolio">
-            </div>
-        </div>
-        <hr>
+  
         <!-- Contact Section -->
         <div class="row" id="spacer">
-            <div class="col-8 offset-2">
-                
+            <div class="col-8 offset-2">           
                 <h2 id="contact-me">Reach Out</h2>
+                <hr>
+    
+                <div class="row">
+                    <a class="reach-out" href="mailto:joshfdesign@gmail.com"><i class="far fa-paper-plane fa-fw"></i>email me</a>
+                </div>
             </div>
         </div>
     </div>
